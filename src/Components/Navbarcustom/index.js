@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import {NavLink} from 'react-router-dom';
 class Navbarcustom extends Component {
   
@@ -11,21 +11,12 @@ class Navbarcustom extends Component {
               <a className="navbar-brand" href="#">Testing</a>
             </div>
             <ul className="nav navbar-nav">
-              {
-                this.props.isAuthenticated
-                  ? (
-                     <li>User Authenticated</li>
-                  ) : (
-                    <Fragment>
-                      <li>
-                        <NavLink to="/">SignUp</NavLink>
-                      </li>
-                      <li>
-                        <NavLink to="/Login">Login</NavLink>
-                      </li>
-                    </Fragment>
-                  )
-              }
+              <li>
+                <NavLink to="/">SignUp</NavLink>
+              </li>
+              <li>
+                <NavLink to="/Login">Login</NavLink>
+              </li>
             </ul>
           </div>
         </nav>

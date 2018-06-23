@@ -45,7 +45,7 @@ class Login extends Component {
   render() {
     return (
       <div>
-        <Navbarcustom isAuthenticated={this.state.isAuthenticated} />
+        <Navbarcustom />
         <div className="wrapper">
           <form
             className="form-signin"
